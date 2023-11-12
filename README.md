@@ -8,3 +8,4 @@
 
 - React Router Dom
 - @react-three/fiber
+- @react-three/drei -> Readymade abstractions for react-three fibers
