@@ -6,10 +6,11 @@
 
 ## Dependencies
 
-- React Router Dom
+- react-router-dom
 - @react-three/fiber
 - @react-three/drei -> Readymade abstractions for react-three fibers
 - @emailjs/browser
+- react-vertical-timeline-component
 
 ## Environment Variables
 
