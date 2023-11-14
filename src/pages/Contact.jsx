@@ -58,7 +58,7 @@ const Contact = () => {
 				console.log(err);
 				showAlert({
 					show: true,
-					text: "I didn't receive your message",
+					text: "I didn't receive your message 😢",
 					type: "danger",
 				});
 			});
@@ -67,7 +67,7 @@ const Contact = () => {
 	const handleBlur = () => setCurrentAnimation("idle");
 
 	return (
-		<section className="relative flex lg:flex-row flex-col max-container">
+		<section className="relative flex lg:flex-row flex-col max-container h-[100vh]">
 			{alert.show && <Alerts {...alert} />}
 
 			<div className="flex-1 min-w-[50%] flex flex-col">
@@ -76,6 +76,7 @@ const Contact = () => {
 				<form
 					className="w-full flex flex-col gap-7 mt-14"
 					onSubmit={handleSubmit}
+					ref={formRef}
 				>
 					<label className="text-black-500 font-semibold">
 						Name
